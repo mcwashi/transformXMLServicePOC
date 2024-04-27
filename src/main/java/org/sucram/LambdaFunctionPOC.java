@@ -20,7 +20,7 @@ import com.amazonaws.services.s3.model.PutObjectRequest;
 
 public class LambdaFunctionPOC implements RequestHandler<Object, String> {
 
-    private static final String S3_BUCKET_NAME = "your-s3-bucket-name";
+    private static final String S3_BUCKET_NAME = "demobucket4963";
     private static final String XML_CONTENT = "<data><item>Example</item></data>";
     private static final String XSLT_CONTENT = "<xsl:stylesheet version=\"1.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">"
             + "<xsl:template match=\"/data\"><root><xsl:apply-templates/></root></xsl:template>"
